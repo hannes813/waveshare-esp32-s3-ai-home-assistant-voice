@@ -1,4 +1,4 @@
-# HiViCon Voice Assistant – Waveshare ESP32-S3 Audio Board for Home Assistant Assist
+# HiViCon Voice Assistant – Waveshare ESP32-S3 AI Smart Speaker Development Board for Home Assistant Assist
 
 Local voice satellite for Home Assistant Assist based on the Waveshare ESP32-S3-AUDIO-Board.
 

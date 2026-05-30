@@ -1,0 +1,73 @@
+[09:41:58][D][speaker_media_player.pipeline:118]: Reading FLAC file type
+[09:41:58][D][ring_buffer:035][ann_read]: Created ring buffer with size 1000000
+[09:41:58][C][i2c.idf:092]: I2C Bus:
+[09:41:58][C][i2c.idf:093]:   SDA Pin: GPIO11
+[09:41:58][C][i2c.idf:093]:  SCL Pin: GPIO10
+[09:41:58][C][i2c.idf:093]:  Frequency: 100000 Hz
+[09:41:58][C][i2c.idf:103]:   Recovery: bus successfully recovered
+[09:41:58][C][i2c.idf:113]: Results from bus scan:
+[09:41:58][C][i2c.idf:119]: Found device at address 0x18
+[09:41:58][C][i2c.idf:119]: Found [D][preferences:148]: Writing 9 items: 0 cached, 9 written, 0 failed
+[09:41:58][D][wifi:1458]: Found networks:
+[09:41:58][I][wifi:1429]: - '404-EinhornAufzucht' (74:42:7F:03:94:2E) [redacted]▂▄▆█ Ch:13 -44dB P:0
+[09:41:58][D][wifi:1852]: Retry phase: INITIAL_CONNECT → SCAN_CONNECTING
+[09:41:58][I][wifi:1097]: Connecting to '404-EinhornAufzucht'[redacted] (74:42:7F:03:94:2E)[redacted] (priority 0, attempt 1/2 in phase SCAN_CONNECTING)...
+[09:41:58][W][wifi_esp32:803]: Disconnected ssid='404-EinhornAufzucht' bssid=74:42:7F:03:94:2E[redacted] reason='Auth Expired'
+[09:41:58][W][wifi:1673]: Connecting to network failed (callback)
+[09:41:58][D][wifi:2032]: Failed '404-EinhornAufzucht'[redacted] (74:42:7F:03:94:2E)[redacted], priority 0 → 0
+[09:41:58][D][wifi:2103]: Retry attempt 2/2 in phase SCAN_CONNECTING
+[09:41:58][I][wifi:1097]: Connecting to '404-EinhornAufzucht'[redacted] (74:42:7F:03:94:2E)[redacted] (priority 0, attempt 2/2 in phase SCAN_CONNECTING)...
+[09:41:58][I][wifi:1570]: Connected
+[09:41:58][C][wifi:1237]:   IP Address: 192.168.178.107
+[09:41:58][C][wifi:1248]:   SSID: '404-EinhornAufzucht'[redacted]
+[09:41:58][C][wifi:1248]:  BSSID: 74:42:7F:03:94:2E[redacted]
+[09:41:58][C][wifi:1248]:  Hostname: 'hivicon-voice-wohnzimmer'
+[09:41:58][C][wifi:1248]:  Signal strength: -43 dB ▂▄▆█
+[09:41:58][C][wifi:1248]:  Channel: 13
+[09:41:58][C][wifi:1248]:  Subnet: 255.255.255.0
+[09:41:58][C][wifi:1248]:  Gateway: 192.168.178.1
+[09:41:58][C][wifi:1248]:  DNS1: 192.168.178.1
+[09:41:58][C][wifi:1248]:  DNS2: 0.0.0.0
+[09:41:58][D][led:695]: control_leds: wifi=1 api=0 improv=0 init=1 ringing=0 timers_active=0 phase=10
+[09:41:58][I][led:654]: led_set_effect: effect='Rainbow Slow' rgb(0.90, 0.10, 0.85) brightness=0.80
+[09:41:58][W][component:422]: wifi cleared Warning flag
+[09:41:58][D][speaker_media_player:456]: State changed to ANNOUNCING
+[09:41:58][D][speaker_media_player.pipeline:118]: Reading FLAC file type
+[09:41:58][D][ring_buffer:035][ann_read]: Created ring buffer with size 1000000
+[09:41:58][D][speaker_media_player.pipeline:128]: Decoded audio has 1 channels, 48000 Hz sample rate, and 16 bits per sample
+[09:41:58][D][resampler_speaker:119]: Starting
+[09:41:58][D][ring_buffer:035]: Created ring buffer with size 3200
+[09:41:58][D][ring_buffer:035][resampler]: Created ring buffer with size 9600
+[09:41:58][D][speaker_mixer:457]: Starting
+[09:41:58][D][speaker_media_player:456]: State changed to IDLE
+[09:41:58][D][resampler_speaker:150]: Stopped
+[09:41:58][D][speaker_mixer:475]: Stopped
+[09:41:58][D][api:228]: Accept 192.168.178.56
+[09:41:58][W][component:422]: api cleared Warning flag
+[09:41:58][D][api.connection:2457]: Home Assistant 2026.2.3 (192.168.178.56): connected
+[09:41:58][D][led:695]: control_leds: wifi=1 api=1 improv=0 init=1 ringing=0 timers_active=0 phase=10
+[09:41:58][I][led:654]: led_set_effect: effect='Rainbow Slow' rgb(0.90, 0.10, 0.85) brightness=0.80
+[09:41:58][D][time:104]: Synchronized time: 2026-05-24 07:39:55
+[09:41:58][D][speaker_media_player:456]: State changed to ANNOUNCING
+[09:41:58][D][speaker_media_player.pipeline:118]: Reading FLAC file type
+[09:41:58][D][ring_buffer:035][ann_read]: Created ring buffer with size 1000000
+[09:41:58][D][speaker_media_player.pipeline:128]: Decoded audio has 1 channels, 48000 Hz sample rate, and 16 bits per sample
+[09:41:58][D][resampler_speaker:119]: Starting
+[09:41:58][D][ring_buffer:035]: Created ring buffer with size 3200
+[09:41:58][D][ring_buffer:035][resampler]: Created ring buffer with size 9600
+[09:41:58][D][speaker_mixer:457]: Starting
+[09:41:58][D][micro_wake_word:365]: Starting wake word detection
+[09:41:58][D][led:695]: control_leds: wifi=1 api=1 improv=0 init=0 ringing=0 timers_active=0 phase=1
+[09:41:58][I][led:654]: led_set_effect: effect='off' rgb(0.00, 0.00, 0.00) brightness=0.80
+[09:41:58][D][micro_wake_word:383]: State changed from STOPPED to STARTING
+[09:41:58][D][micro_wake_word:267]: Inference task has started, attempting to allocate memory for buffers
+[09:41:58][D][micro_wake_word:272]: Inference task is running
+[09:41:58][D][micro_wake_word:383]: State changed from STARTING to DETECTING_WAKE_WORD
+[09:41:58][D][ring_buffer:035][mww]: Created ring buffer with size 3840
+[09:41:58][D][micro_wake_word:051][mww]: Probed tensor arena size: 34528 bytes
+[09:41:58][D][micro_wake_word:051][mww]: Probed tensor arena size: 16656 bytes
+[09:41:58][D][speaker_media_player:456]: State changed to IDLE
+[09:41:58][D][resampler_speaker:150]: Stopped
+[09:41:58][D][speaker_mixer:475]: Stopped
+[09:41:58][I][safe_mode:142]: Boot seems successful; resetting boot loop counter
+[09:41:58][D][preferences:148]: Writing 4 items: 0 cached, 4 written, 0 failed

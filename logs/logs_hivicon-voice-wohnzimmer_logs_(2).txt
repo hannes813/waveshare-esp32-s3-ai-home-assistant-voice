@@ -1,0 +1,479 @@
+INFO ESPHome 2026.5.0
+INFO Loaded validated config cache for hivicon-voice-wohnzimmer.yaml, skipping validation.
+INFO Starting log output from 192.168.178.107 using esphome API
+INFO Successfully resolved hivicon-voice-wohnzimmer @ 192.168.178.107 in 0.000s
+INFO Successfully connected to hivicon-voice-wohnzimmer @ 192.168.178.107 in 0.005s
+INFO Successful handshake with hivicon-voice-wohnzimmer @ 192.168.178.107 in 0.129s
+[10:00:33.930][E][esp32.crash:329]: *** CRASH DETECTED ON PREVIOUS BOOT ***
+[10:00:33.932][E][esp32.crash:332]:   Reason: Fault - LoadProhibited
+[10:00:33.933][E][esp32.crash:336]:   Crashed core: 1
+[10:00:33.934][E][esp32.crash:337]:   PC:  0x42008DBF  (fault location)
+WARNING Decoded 0x42008dbf: esphome::api::APIServer::on_log(unsigned char, char const*, char const*, unsigned int) at /IDF_PROJECT/src/esphome/components/api/api_server.cpp:621 (discriminator 1)
+ (inlined by) esphome::api::APIServer::on_log(unsigned char, char const*, char const*, unsigned int) at /IDF_PROJECT/src/esphome/components/api/api_server.cpp:613 (discriminator 1)
+[10:00:34.089][E][esp32.crash:302]:   BT0: 0x42008DBC  (backtrace)
+WARNING Decoded 0x42008dbc: std::__uniq_ptr_impl<esphome::api::APIConnection, esphome::api::APIServer::APIConnectionDeleter>::_M_ptr() const at /TOOLCHAIN/xtensa-esp-elf/include/c++/14.2.0/bits/unique_ptr.h:193 (discriminator 1)
+ (inlined by) std::unique_ptr<esphome::api::APIConnection, esphome::api::APIServer::APIConnectionDeleter>::get() const at /TOOLCHAIN/xtensa-esp-elf/include/c++/14.2.0/bits/unique_ptr.h:464 (discriminator 1)
+ (inlined by) std::unique_ptr<esphome::api::APIConnection, esphome::api::APIServer::APIConnectionDeleter>::operator->() const at /TOOLCHAIN/xtensa-esp-elf/include/c++/14.2.0/bits/unique_ptr.h:457 (discriminator 1)
+ (inlined by) esphome::api::APIServer::on_log(unsigned char, char const*, char const*, unsigned int) at /IDF_PROJECT/src/esphome/components/api/api_server.cpp:621 (discriminator 1)
+ (inlined by) esphome::api::APIServer::on_log(unsigned char, char const*, char const*, unsigned int) at /IDF_PROJECT/src/esphome/components/api/api_server.cpp:613 (discriminator 1)
+[10:00:34.233][E][esp32.crash:302]:   BT1: 0x42008DF5  (backtrace)
+WARNING Decoded 0x42008df5: esphome::api::APIServer::setup()::{lambda(void*, unsigned char, char const*, char const*, unsigned int)#1}::_FUN(void*, unsigned char, char const*, char const*, unsigned int) at /IDF_PROJECT/src/esphome/components/api/api_server.cpp:101
+ (inlined by) _FUN at /IDF_PROJECT/src/esphome/components/api/api_server.cpp:102
+[10:00:34.496][E][esp32.crash:302]:   BT2: 0x420E9ED5  (backtrace)
+WARNING Decoded 0x420e9ed5: esphome::logger::LogCallback::invoke(unsigned char, char const*, char const*, unsigned int) const at /IDF_PROJECT/src/esphome/components/logger/logger.h:60
+ (inlined by) esphome::logger::Logger::notify_listeners_(unsigned char, char const*, esphome::logger::LogBuffer const&) at /IDF_PROJECT/src/esphome/components/logger/logger.h:262
+[10:00:34.877][E][esp32.crash:302]:   BT3: 0x42011D94  (backtrace)
+WARNING Decoded 0x42011d94: void esphome::logger::Logger::log_message_to_buffer_and_send_<char const*>(bool&, unsigned char, char const*, int, char const*, __va_list_tag, char const*) at /IDF_PROJECT/src/esphome/components/logger/logger.h:294
+ (inlined by) esphome::logger::Logger::log_vprintf_(unsigned char, char const*, int, char const*, __va_list_tag) at /IDF_PROJECT/src/esphome/components/logger/logger.cpp:44
+[10:00:35.255][E][esp32.crash:302]:   BT4: 0x420207E5  (backtrace)
+WARNING Decoded 0x420207e5: esphome::esp_log_printf_(int, char const*, int, char const*, ...) at /IDF_PROJECT/src/esphome/core/log.cpp:34
+[10:00:36.057][E][esp32.crash:302]:   BT5: 0x420239FF  (backtrace)
+WARNING Decoded 0x420239ff: setup()::{lambda()#44}::_FUN() at /config/hivicon-voice-wohnzimmer.yaml:695
+ (inlined by) _FUN at /config/hivicon-voice-wohnzimmer.yaml:747
+[10:00:37.114][E][esp32.crash:302]:   BT6: 0x420EB4ED  (backtrace)
+WARNING Decoded 0x420eb4ed: esphome::StatelessLambdaAction<>::play() at /IDF_PROJECT/src/esphome/core/base_automation.h:242
+[10:00:38.492][E][esp32.crash:302]:   BT7: 0x42024107  (backtrace)
+WARNING Decoded 0x42024107: esphome::Action<>::play_complex() at /IDF_PROJECT/src/esphome/core/automation.h:512
+[10:00:39.689][E][esp32.crash:302]:   BT8: 0x42022255  (backtrace)
+WARNING Decoded 0x42022255: esphome::ActionList<>::play() at /IDF_PROJECT/src/esphome/core/automation.h:597
+ (inlined by) esphome::Automation<>::trigger() at /IDF_PROJECT/src/esphome/core/automation.h:642
+ (inlined by) esphome::Trigger<>::trigger() at /IDF_PROJECT/src/esphome/core/automation.h:485
+ (inlined by) esphome::script::SingleScript<>::execute() at /IDF_PROJECT/src/esphome/components/script/script.h:77
+[10:00:40.824][E][esp32.crash:302]:   BT9: 0x420EB8AD  (backtrace)
+WARNING Decoded 0x420eb8ad: void esphome::script::Script<>::execute_tuple_<>(std::tuple<> const&, std::integer_sequence<unsigned int>) at /IDF_PROJECT/src/esphome/components/script/script.h:57
+ (inlined by) esphome::script::Script<>::execute_tuple(std::tuple<> const&) at /IDF_PROJECT/src/esphome/components/script/script.h:49
+[10:00:41.857][E][esp32.crash:302]:   BT10: 0x420220ED  (backtrace)
+WARNING Decoded 0x420220ed: esphome::script::ScriptExecuteAction<esphome::script::Script<>>::play() at /IDF_PROJECT/src/esphome/components/script/script.h:218 (discriminator 1)
+[10:00:42.957][E][esp32.crash:302]:   BT11: 0x42024107  (backtrace)
+WARNING Decoded 0x42024107: esphome::Action<>::play_complex() at /IDF_PROJECT/src/esphome/core/automation.h:512
+[10:00:43.911][E][esp32.crash:302]:   BT12: 0x420EBD89  (backtrace)
+WARNING Decoded 0x420ebd89: esphome::Action<>::play_next_() at /IDF_PROJECT/src/esphome/core/automation.h:543
+[10:00:44.965][E][esp32.crash:302]:   BT13: 0x4202410F  (backtrace)
+WARNING Decoded 0x4202410f: esphome::Action<>::play_complex() at /IDF_PROJECT/src/esphome/core/automation.h:513
+[10:00:46.866][E][esp32.crash:302]:   BT14: 0x420EBD89  (backtrace)
+WARNING Decoded 0x420ebd89: esphome::Action<>::play_next_() at /IDF_PROJECT/src/esphome/core/automation.h:543
+[10:00:48.077][E][esp32.crash:302]:   BT15: 0x4202410F  (backtrace)
+WARNING Decoded 0x4202410f: esphome::Action<>::play_complex() at /IDF_PROJECT/src/esphome/core/automation.h:513
+[10:00:51.255][E][esp32.crash:358]: Use: addr2line -pfiaC -e firmware.elf 0x42008DBF 0x42008DBC 0x42008DF5 0x420E9ED5 0x42011D94 0x420207E5 0x420239FF 0x420EB4ED 0x42024107 0x42022255 0x420EB8AD 0x420220ED 0x42024107 0x420EBD89 0x4202410F 0x420EBD89 0x4202410F
+[10:00:51.255][I][app:151]: ESPHome version 2026.5.0 compiled on 2026-05-23 13:39:06 +0200
+[10:00:51.255][I][app:158]: ESP32 Chip: ESP32-S3 rev0.2, 2 core(s)
+[10:00:51.256][C][logger:219]: Logger:
+[10:00:51.256][C][logger:219]:   Max Level: DEBUG
+[10:00:51.256][C][logger:219]:   Initial Level: DEBUG
+[10:00:51.256][C][logger:226]:   Log Baud Rate: 115200
+[10:00:51.256][C][logger:226]:   Hardware UART: USB_SERIAL_JTAG
+[10:00:51.266][C][logger:235]:   Task Log Buffer Size: 768 bytes
+[10:00:51.273][C][i2c.idf:092]: I2C Bus:
+[10:00:51.274][C][i2c.idf:093]:   SDA Pin: GPIO11
+[10:00:51.274][C][i2c.idf:093]:   SCL Pin: GPIO10
+[10:00:51.274][C][i2c.idf:093]:   Frequency: 100000 Hz
+[10:00:51.281][C][i2c.idf:103]:   Recovery: bus successfully recovered
+[10:00:51.281][C][i2c.idf:113]: Results from bus scan:
+[10:00:51.281][C][i2c.idf:119]: Found device at address 0x18
+[10:00:51.281][C][i2c.idf:119]: Found device at address 0x20
+[10:00:51.281][C][i2c.idf:119]: Found device at address 0x40
+[10:00:51.282][C][i2c.idf:119]: Found device at address 0x51
+[10:00:51.282][C][tca9555:036]: TCA9555:
+[10:00:51.282][C][tca9555:038]:   Address: 0x20
+[10:00:51.282][C][esp32_rmt_led_strip:269]: ESP32 RMT LED Strip:
+[10:00:51.282][C][esp32_rmt_led_strip:269]:   Pin: 38
+[10:00:51.304][C][esp32_rmt_led_strip:273]:   RMT Symbols: 192
+[10:00:51.304][C][esp32_rmt_led_strip:298]:   RGB Order: RGB
+[10:00:51.304][C][esp32_rmt_led_strip:298]:   Max refresh rate: 0
+[10:00:51.304][C][esp32_rmt_led_strip:298]:   Number of LEDs: 7
+[10:00:51.319][C][template.select:010]: Template Select 'Wake word sensitivity'
+[10:00:51.319][C][template.select:014]:   Optimistic: YES
+[10:00:51.319][C][template.select:014]:   Initial Option: Slightly sensitive
+[10:00:51.319][C][template.select:014]:   Restore Value: YES
+[10:00:51.319][C][template.select:010]: Template Select 'Alarm action'
+[10:00:51.320][C][template.select:223]:   Icon: 'mdi:bell-plus'
+[10:00:51.320][C][template.select:014]:   Optimistic: YES
+[10:00:51.320][C][template.select:014]:   Initial Option: Play sound
+[10:00:51.320][C][template.select:014]:   Restore Value: NO
+[10:00:51.357][C][switch.gpio:088]: GPIO Switch 'Amplifier'
+[10:00:51.357][C][switch.gpio:088]:   Restore Mode: restore defaults to ON
+[10:00:51.358][C][switch.gpio:223]:   Icon: 'mdi:speaker'
+[10:00:51.358][C][switch.gpio:152]:   Pin: 8 via TCA9555
+[10:00:51.358][C][template.number:016]: Template Number 'Mic Gain (ES7210 dB)'
+[10:00:51.358][C][template.number:049]:   Optimistic: NO
+[10:00:51.391][C][template.number:451]:   Update Interval: 60.0s
+[10:00:51.391][C][template.number:016]: Template Number 'Gain Factor'
+[10:00:51.392][C][template.number:049]:   Optimistic: NO
+[10:00:51.491][C][template.number:451]:   Update Interval: 60.0s
+[10:00:51.491][C][template.number:016]: Template Number 'Noise Suppression'
+[10:00:51.492][C][template.number:049]:   Optimistic: NO
+[10:00:51.492][C][template.number:451]:   Update Interval: 60.0s
+[10:00:51.500][C][template.number:016]: Template Number 'LED Ring Brightness'
+[10:00:51.501][C][template.number:223]:   Icon: 'mdi:brightness-6'
+[10:00:51.501][C][template.number:049]:   Optimistic: YES
+[10:00:51.501][C][template.number:451]:   Update Interval: 60.0s
+[10:00:51.501][C][template.sensor:017]: Template Sensor 'Next timer'
+[10:00:51.501][C][template.sensor:017]:   State Class: ''
+[10:00:51.501][C][template.sensor:017]:   Unit of Measurement: 's'
+[10:00:51.501][C][template.sensor:017]:   Accuracy Decimals: 0
+[10:00:51.502][C][template.sensor:232]:   Device Class: 'duration'
+[10:00:51.502][C][template.sensor:223]:   Icon: 'mdi:timer'
+[10:00:51.502][C][template.sensor:447]:   Update Interval: never
+[10:00:51.515][C][template.text_sensor:016]: Template Sensor 'Next timer name'
+[10:00:51.516][C][template.text_sensor:223]:   Icon: 'mdi:timer'
+[10:00:51.516][C][template.text_sensor:016]: Template Sensor 'Alarm time'
+[10:00:51.516][C][template.text_sensor:223]:   Icon: 'mdi:bell-ring'
+[10:00:51.516][C][template.text_sensor:016]: Template Sensor 'Current device time'
+[10:00:51.516][C][template.text_sensor:223]:   Icon: 'mdi:clock'
+[10:00:51.517][C][gpio.binary_sensor:016]: GPIO Binary Sensor 'Key1'
+[10:00:51.517][C][gpio.binary_sensor:152]:   Pin: 9 via TCA9555
+[10:00:51.517][C][gpio.binary_sensor:061]:   Mode: polling
+[10:00:51.531][C][gpio.binary_sensor:016]: GPIO Binary Sensor 'Key2'
+[10:00:51.532][C][gpio.binary_sensor:152]:   Pin: 10 via TCA9555
+[10:00:51.532][C][gpio.binary_sensor:061]:   Mode: polling
+[10:00:51.532][C][gpio.binary_sensor:016]: GPIO Binary Sensor 'Key3'
+[10:00:51.539][C][gpio.binary_sensor:152]:   Pin: 11 via TCA9555
+[10:00:51.539][C][gpio.binary_sensor:061]:   Mode: polling
+[10:00:51.539][C][light:093]: Light 'Status Ring'
+[10:00:51.539][C][light:096]:   Default Transition Length: 0.2s
+[10:00:51.539][C][light:096]:   Gamma Correct: 2.80
+[10:00:51.540][C][template.switch:088]: Template Switch 'Diag: disable microphone'
+[10:00:51.540][C][template.switch:088]:   Restore Mode: restore defaults to OFF
+[10:00:51.540][C][template.switch:055]:   Optimistic: YES
+[10:00:51.549][C][template.switch:088]: Template Switch 'Microphone Mute'
+[10:00:51.549][C][template.switch:088]:   Restore Mode: restore defaults to OFF
+[10:00:51.556][C][template.switch:223]:   Icon: 'mdi:microphone-off'
+[10:00:51.556][C][template.switch:055]:   Optimistic: NO
+[10:00:51.556][C][template.switch:088]: Template Switch 'Mute⁄unmute sound'
+[10:00:51.556][C][template.switch:088]:   Restore Mode: restore defaults to ON
+[10:00:51.556][C][template.switch:223]:   Icon: 'mdi:bullhorn'
+[10:00:51.557][C][template.switch:055]:   Optimistic: YES
+[10:00:51.557][C][template.switch:088]: Template Switch 'Wake sound'
+[10:00:51.557][C][template.switch:088]:   Restore Mode: restore defaults to ON
+[10:00:51.557][C][template.switch:223]:   Icon: 'mdi:bullhorn'
+[10:00:51.557][C][template.switch:055]:   Optimistic: YES
+[10:00:51.557][C][template.switch:088]: Template Switch 'timer_ringing'
+[10:00:51.557][C][template.switch:088]:   Restore Mode: always OFF
+[10:00:51.558][C][template.switch:055]:   Optimistic: YES
+[10:00:51.558][C][template.switch:088]: Template Switch 'Alarm on'
+[10:00:51.558][C][template.switch:088]:   Restore Mode: restore defaults to OFF
+[10:00:51.558][C][template.switch:223]:   Icon: 'mdi:bell-badge'
+[10:00:51.575][C][template.switch:055]:   Optimistic: YES
+[10:00:51.576][D][micro_wake_word:330]: Detected 'Okay Nabu' with sliding average probability is 0.86 and max probability is 0.96
+[10:00:51.576][C][psram:015]: PSRAM:
+[10:00:51.577][C][psram:018]:   Available: YES
+[10:00:51.577][C][psram:020]:   Size: 8192 KB
+[10:00:51.577][D][speaker_media_player:456]: State changed to ANNOUNCING
+[10:00:51.577][D][speaker_media_player.pipeline:118]: Reading FLAC file type
+[10:00:51.577][D][ring_buffer:035][ann_read]: Created ring buffer with size 1000000
+[10:00:51.577][C][es7210:027]: ES7210 audio ADC:
+[10:00:51.577][C][es7210:027]:   Bits Per Sample: 16
+[10:00:51.577][C][es7210:027]:   Sample Rate: 16000
+[10:00:51.578][C][es8311:061]: ES8311 Audio Codec:
+[10:00:51.578][C][es8311:061]:   Use MCLK: YES
+[10:00:51.578][C][es8311:061]:   Use Microphone: NO
+[10:00:51.578][C][es8311:061]:   DAC Bits per Sample: 16
+[10:00:51.578][C][es8311:061]:   Sample Rate: 16000
+[10:00:51.594][C][es8311:076]:   I2S Role: MASTER (driving BCLK/LRCK)
+[10:00:51.601][C][es8311:083]:   MCLK multiple (codec): 256  (MCLK ~= 4096000 Hz)
+[10:00:51.604][C][es8311:104]:   REG00=0xC0 REG01=0x3F REG02=0x08 REG03=0x10
+[10:00:51.605][C][es8311:106]:   REG04=0x20 REG05=0x00 REG06=0x07 REG07=0x00 REG08=0xFF
+[10:00:51.605][C][es8311:108]:   REG09(SDPIN)=0x0C REG0A(SDPOUT)=0x0C  REG31(DAC mute)=0x00 REG32(DAC vol)=0x99
+[10:00:51.605][C][i2s_audio.microphone:053]: Microphone:
+[10:00:51.605][C][i2s_audio.microphone:053]:   Pin: 15
+[10:00:51.605][C][i2s_audio.microphone:053]:   PDM: NO
+[10:00:51.605][C][i2s_audio.microphone:053]:   DC offset correction: NO
+[10:00:51.605][C][speaker_mixer:418]: Speaker Mixer:
+[10:00:51.605][C][speaker_mixer:418]:   Number of output channels: 2
+[10:00:51.606][C][speaker_mixer:081]: Mixer Source Speaker
+[10:00:51.606][C][speaker_mixer:081]:   Buffer Duration: 100 ms
+[10:00:51.606][C][speaker_mixer:088]:   Timeout: never
+[10:00:51.620][C][speaker_mixer:081]: Mixer Source Speaker
+[10:00:51.620][C][speaker_mixer:081]:   Buffer Duration: 100 ms
+[10:00:51.621][C][speaker_mixer:088]:   Timeout: never
+[10:00:51.621][D][speaker_media_player.pipeline:128]: Decoded audio has 1 channels, 48000 Hz sample rate, and 16 bits per sample
+[10:00:51.627][C][resampler_speaker:043]: Resampler Speaker:
+[10:00:51.627][C][resampler_speaker:043]:   Target Bits Per Sample: 16
+[10:00:51.627][C][resampler_speaker:043]:   Target Sample Rate: 16000 Hz
+[10:00:51.629][C][resampler_speaker:043]: Resampler Speaker:
+[10:00:51.629][C][resampler_speaker:043]:   Target Bits Per Sample: 16
+[10:00:51.629][C][resampler_speaker:043]:   Target Sample Rate: 16000 Hz
+[10:00:51.629][D][resampler_speaker:119]: Starting
+[10:00:51.639][D][ring_buffer:035]: Created ring buffer with size 3200
+[10:00:51.639][D][ring_buffer:035][resampler]: Created ring buffer with size 9600
+[10:00:51.644][C][factory_reset.button:014]: Factory Reset Button 'Factory Reset'
+[10:00:51.644][C][factory_reset.button:223]:   Icon: 'mdi:restart-alert'
+[10:00:51.644][C][restart.button:014]: Restart Button 'Restart'
+[10:00:51.657][C][restart.button:223]:   Icon: 'mdi:restart'
+[10:00:51.658][D][speaker_mixer:457]: Starting
+[10:00:51.658][C][homeassistant.time:009]: Home Assistant Time
+[10:00:51.658][C][time:051]: Timezone: UTC+0:00
+[10:00:51.658][C][time:055]: Current time: 2026-05-24 08:00:34
+[10:00:51.658][D][voice_assistant:576]: State changed from IDLE to START_MICROPHONE
+[10:00:51.658][D][voice_assistant:583]: Desired state set to START_PIPELINE
+[10:00:51.659][D][voice_assistant:254]: Starting Microphone
+[10:00:51.659][D][ring_buffer:035]: Created ring buffer with size 16384
+[10:00:51.659][D][voice_assistant:576]: State changed from START_MICROPHONE to STARTING_MICROPHONE
+[10:00:51.680][D][voice_assistant:576]: State changed from STARTING_MICROPHONE to START_PIPELINE
+[10:00:51.680][C][i2s_audio.speaker:042]: Speaker:
+[10:00:51.680][C][i2s_audio.speaker:042]:   Pin: 16
+[10:00:51.680][C][i2s_audio.speaker:042]:   Buffer duration: 100
+[10:00:51.681][C][i2s_audio.speaker.std:044]:   Communication format: std
+[10:00:51.681][D][voice_assistant:278]: Requesting start
+[10:00:51.681][D][voice_assistant:576]: State changed from START_PIPELINE to STARTING_PIPELINE
+[10:00:51.681][C][captive_portal:133]: Captive Portal:
+[10:00:51.681][D][voice_assistant:598]: Client started, streaming microphone
+[10:00:51.682][D][voice_assistant:576]: State changed from STARTING_PIPELINE to STREAMING_MICROPHONE
+[10:00:51.682][D][voice_assistant:583]: Desired state set to STREAMING_MICROPHONE
+[10:00:51.682][D][voice_assistant:730]: Event Type: 1
+[10:00:51.711][D][voice_assistant:733]: Assist Pipeline running
+[10:00:51.711][C][wifi:1526]: WiFi:
+[10:00:51.711][C][wifi:1526]:   Local MAC: 44:1B:F6:84:CB:F4
+[10:00:51.711][C][wifi:1526]:   Connected: YES
+[10:00:51.711][C][wifi:1237]:   IP Address: 192.168.178.107
+[10:00:51.712][C][wifi:1248]:   SSID: '404-EinhornAufzucht'[redacted]
+[10:00:51.712][C][wifi:1248]:   BSSID: 74:42:7F:03:94:2E[redacted]
+[10:00:51.712][C][wifi:1248]:   Hostname: 'hivicon-voice-wohnzimmer'
+[10:00:51.712][C][wifi:1248]:   Signal strength: -50 dB ▂▄▆█
+[10:00:51.712][C][wifi:1248]:   Channel: 13
+[10:00:51.712][C][wifi:1248]:   Subnet: 255.255.255.0
+[10:00:51.712][C][wifi:1248]:   Gateway: 192.168.178.1
+[10:00:51.712][C][wifi:1248]:   DNS1: 192.168.178.1
+[10:00:51.712][C][wifi:1248]:   DNS2: 0.0.0.0
+[10:00:51.724][C][esphome.ota:097]: Over-The-Air updates:
+[10:00:51.724][C][esphome.ota:097]:   Address: hivicon-voice-wohnzimmer.local:3232
+[10:00:51.724][C][esphome.ota:097]:   Version: 2
+[10:00:51.724][C][esphome.ota:104]:   Password configured
+[10:00:51.724][C][safe_mode:058]: Safe Mode:
+[10:00:51.724][C][safe_mode:058]:   Successful after: 60s
+[10:00:51.724][C][safe_mode:058]:   Invoke after: 10 attempts
+[10:00:51.724][C][safe_mode:058]:   Duration: 300s
+[10:00:51.725][C][safe_mode:079]:   Bootloader rollback: support unknown
+[10:00:51.725][D][voice_assistant:730]: Event Type: 3
+[10:00:51.725][D][voice_assistant:752]: STT started
+[10:00:51.725][C][web_server.ota:256]: Web Server OTA
+[10:00:51.725][D][led:695]: control_leds: wifi=1 api=1 improv=0 init=0 ringing=0 timers_active=0 phase=2
+[10:00:51.726][I][led:654]: led_set_effect: effect='solid' rgb(0.50, 0.00, 0.50) brightness=0.80
+[10:00:51.726][C][api:243]: Server:
+[10:00:51.726][C][api:243]:   Address: hivicon-voice-wohnzimmer.local:6053
+[10:00:51.726][C][api:243]:   Listen backlog: 4
+[10:00:51.726][C][api:243]:   Max connections: 5
+[10:00:51.741][C][api:250]:   Noise encryption: YES
+[10:00:51.742][C][mdns:230]: mDNS:
+[10:00:51.742][C][mdns:230]:   Hostname: hivicon-voice-wohnzimmer
+[10:00:51.742][C][micro_wake_word:070]: microWakeWord:
+[10:00:51.766][C][micro_wake_word:071]:   models:
+[10:00:51.766][C][micro_wake_word:013]:     - Wake Word: Okay Nabu
+[10:00:51.766][C][micro_wake_word:013]:       Probability cutoff: 0.85
+[10:00:51.766][C][micro_wake_word:013]:       Sliding window size: 5
+[10:00:51.770][C][micro_wake_word:013]:     - Wake Word: Kenobi
+[10:00:51.770][C][micro_wake_word:013]:       Probability cutoff: 0.90
+[10:00:51.770][C][micro_wake_word:013]:       Sliding window size: 5
+[10:00:51.770][C][micro_wake_word:013]:     - Wake Word: Hey Jarvis
+[10:00:51.770][C][micro_wake_word:013]:       Probability cutoff: 0.97
+[10:00:51.770][C][micro_wake_word:013]:       Sliding window size: 5
+[10:00:51.771][C][micro_wake_word:013]:     - Wake Word: Stop
+[10:00:51.771][C][micro_wake_word:013]:       Probability cutoff: 0.50
+[10:00:51.771][C][micro_wake_word:013]:       Sliding window size: 5
+[10:00:51.778][C][micro_wake_word:021]:     - VAD Model
+[10:00:51.778][C][micro_wake_word:021]:       Probability cutoff: 0.03
+[10:00:51.778][C][micro_wake_word:021]:       Sliding window size: 5
+[10:00:51.778][C][debug:017]: Debug component:
+[10:00:51.778][D][debug:031]: ESPHome version 2026.5.0
+[10:00:51.778][D][debug:035]: Free Heap Size: 139792 bytes
+[10:00:51.778][D][debug:255]: ESP32 debug info:
+[10:00:51.778][D][debug:255]:   Chip: ESP32-S3
+[10:00:51.778][D][debug:255]:   Cores: 2
+[10:00:51.778][D][debug:255]:   Revision: 2
+[10:00:51.778][D][debug:255]:   CPU Frequency: 240 MHz
+[10:00:51.778][D][debug:255]:   ESP-IDF Version: 5.5.4
+[10:00:51.778][D][debug:255]:   EFuse MAC: 44:1B:F6:84:CB:F4
+[10:00:51.778][D][debug:255]:   Reset Reason: exception/panic
+[10:00:51.778][D][debug:255]:   Wakeup Cause: undefined
+[10:00:51.817][D][debug:275]:   Framework: ESP-IDF
+[10:00:51.818][C][debug:158]: Partition table:
+[10:00:51.818][C][debug:158]:   Name         Type Subtype  Address    Size      
+[10:00:51.818][C][debug:165]:   otadata      1    0        0x00009000 0x00002000
+[10:00:51.830][C][debug:165]:   phy_init     1    1        0x0000B000 0x00001000
+[10:00:51.832][C][debug:165]:   app0         0    16       0x00010000 0x007C0000
+[10:00:51.832][C][debug:165]:   app1         0    17       0x007D0000 0x007C0000
+[10:00:51.832][C][debug:165]:   nvs          1    2        0x00F90000 0x00070000
+[10:00:51.833][D][speaker_media_player:456]: State changed to IDLE
+[10:00:51.833][D][resampler_speaker:150]: Stopped
+[10:00:51.833][D][speaker_mixer:475]: Stopped
+[10:00:51.848][D][micro_wake_word:330]: Detected 'Okay Nabu' with sliding average probability is 0.94 and max probability is 0.98
+[10:00:51.848][D][voice_assistant:710]: Signaling stop
+[10:00:51.849][D][voice_assistant:576]: State changed from STREAMING_MICROPHONE to STOP_MICROPHONE
+[10:00:51.855][D][voice_assistant:583]: Desired state set to IDLE
+[10:00:51.856][D][voice_assistant:576]: State changed from STOP_MICROPHONE to STOPPING_MICROPHONE
+[10:00:51.861][D][voice_assistant:576]: State changed from STOPPING_MICROPHONE to IDLE
+[10:00:51.862][D][voice_assistant:730]: Event Type: 2
+[10:00:51.862][D][voice_assistant:872]: Assist Pipeline ended
+[10:00:51.862][D][led:695]: control_leds: wifi=1 api=1 improv=0 init=0 ringing=0 timers_active=0 phase=1
+[10:00:51.862][I][led:654]: led_set_effect: effect='off' rgb(0.00, 0.00, 0.00) brightness=0.80
+[10:00:51.862][I][safe_mode:142]: Boot seems successful; resetting boot loop counter
+[10:00:52.330][D][preferences:148]: Writing 4 items: 0 cached, 4 written, 0 failed
+[10:00:57.189][D][micro_wake_word:330]: Detected 'Okay Nabu' with sliding average probability is 0.91 and max probability is 0.95
+[10:00:57.224][D][speaker_media_player:456]: State changed to ANNOUNCING
+[10:00:57.226][D][speaker_media_player.pipeline:118]: Reading FLAC file type
+[10:00:57.229][D][ring_buffer:035][ann_read]: Created ring buffer with size 1000000
+[10:00:57.313][D][speaker_media_player.pipeline:128]: Decoded audio has 1 channels, 48000 Hz sample rate, and 16 bits per sample
+[10:00:57.328][S][media_player]: '' >> PLAYING
+[10:00:57.328][S][media_player]:   Volume: 50%
+[10:00:57.330][D][resampler_speaker:119]: Starting
+[10:00:57.330][D][ring_buffer:035]: Created ring buffer with size 3200
+[10:00:57.331][D][speaker_mixer:457]: Starting
+[10:00:57.331][D][ring_buffer:035][resampler]: Created ring buffer with size 9600
+[10:00:57.491][D][voice_assistant:576]: State changed from IDLE to START_MICROPHONE
+[10:00:57.493][D][voice_assistant:583]: Desired state set to START_PIPELINE
+[10:00:57.501][D][voice_assistant:254]: Starting Microphone
+[10:00:57.502][D][ring_buffer:035]: Created ring buffer with size 16384
+[10:00:57.504][D][voice_assistant:576]: State changed from START_MICROPHONE to STARTING_MICROPHONE
+[10:00:57.522][D][voice_assistant:576]: State changed from STARTING_MICROPHONE to START_PIPELINE
+[10:00:57.539][D][voice_assistant:278]: Requesting start
+[10:00:57.540][D][voice_assistant:576]: State changed from START_PIPELINE to STARTING_PIPELINE
+[10:00:57.577][D][voice_assistant:598]: Client started, streaming microphone
+[10:00:57.579][D][voice_assistant:576]: State changed from STARTING_PIPELINE to STREAMING_MICROPHONE
+[10:00:57.579][D][voice_assistant:583]: Desired state set to STREAMING_MICROPHONE
+[10:00:57.603][D][voice_assistant:730]: Event Type: 1
+[10:00:57.603][D][voice_assistant:733]: Assist Pipeline running
+[10:00:57.603][D][voice_assistant:730]: Event Type: 3
+[10:00:57.603][D][voice_assistant:752]: STT started
+[10:00:57.604][D][led:695]: control_leds: wifi=1 api=1 improv=0 init=0 ringing=0 timers_active=0 phase=2
+[10:00:57.605][I][led:654]: led_set_effect: effect='solid' rgb(0.50, 0.00, 0.50) brightness=0.80
+[10:00:57.707][S][light]: 'Status Ring' >> ON
+[10:00:57.707][S][light]:   Brightness: 80%
+[10:00:57.707][S][light]:   Red: 100%, Green: 0%, Blue: 100%
+[10:00:57.707][S][light]:   Effect: 'None'
+[10:00:58.018][D][speaker_media_player:456]: State changed to IDLE
+[10:00:58.020][D][resampler_speaker:150]: Stopped
+[10:00:58.124][S][media_player]: '' >> IDLE
+[10:00:58.124][S][media_player]:   Volume: 50%
+[10:00:58.415][D][speaker_mixer:475]: Stopped
+[10:01:01.031][S][text_sensor]: 'Current device time' >> '08:01'
+[10:01:06.303][D][voice_assistant:730]: Event Type: 11
+[10:01:06.307][D][voice_assistant:933]: Starting STT by VAD
+[10:01:06.307][D][led:695]: control_leds: wifi=1 api=1 improv=0 init=0 ringing=0 timers_active=0 phase=3
+[10:01:06.307][I][led:654]: led_set_effect: effect='Pulse Medium' rgb(0.80, 0.00, 0.80) brightness=0.80
+[10:01:06.410][S][light]: 'Status Ring' >> ON
+[10:01:06.410][S][light]:   Brightness: 80%
+[10:01:06.410][S][light]:   Red: 100%, Green: 0%, Blue: 100%
+[10:01:06.410][S][light]:   Effect: 'Pulse Medium'
+[10:01:08.627][D][voice_assistant:730]: Event Type: 12
+[10:01:08.630][D][voice_assistant:937]: STT by VAD end
+[10:01:08.630][D][voice_assistant:576]: State changed from STREAMING_MICROPHONE to STOP_MICROPHONE
+[10:01:08.630][D][voice_assistant:583]: Desired state set to AWAITING_RESPONSE
+[10:01:08.632][D][led:695]: control_leds: wifi=1 api=1 improv=0 init=0 ringing=0 timers_active=0 phase=4
+[10:01:08.633][I][led:654]: led_set_effect: effect='Pulse Slow' rgb(0.60, 0.00, 0.60) brightness=0.80
+[10:01:08.649][D][voice_assistant:576]: State changed from STOP_MICROPHONE to STOPPING_MICROPHONE
+[10:01:08.665][D][voice_assistant:576]: State changed from STOPPING_MICROPHONE to AWAITING_RESPONSE
+[10:01:08.735][S][light]: 'Status Ring' >> ON
+[10:01:08.735][S][light]:   Brightness: 80%
+[10:01:08.735][S][light]:   Red: 100%, Green: 0%, Blue: 100%
+[10:01:08.735][S][light]:   Effect: 'Pulse Slow'
+[10:01:12.757][D][micro_wake_word:330]: Detected 'Okay Nabu' with sliding average probability is 0.87 and max probability is 0.96
+[10:01:12.760][D][voice_assistant:710]: Signaling stop
+[10:01:12.776][D][voice_assistant:730]: Event Type: 2
+[10:01:12.776][D][voice_assistant:872]: Assist Pipeline ended
+[10:01:12.778][D][voice_assistant:576]: State changed from AWAITING_RESPONSE to IDLE
+[10:01:12.780][D][voice_assistant:583]: Desired state set to IDLE
+[10:01:12.780][D][led:695]: control_leds: wifi=1 api=1 improv=0 init=0 ringing=0 timers_active=0 phase=1
+[10:01:12.782][I][led:654]: led_set_effect: effect='off' rgb(0.00, 0.00, 0.00) brightness=0.80
+[10:01:12.881][S][light]: 'Status Ring' >> OFF
+[10:02:01.063][S][text_sensor]: 'Current device time' >> '08:02'
+[10:02:29.716][D][micro_wake_word:330]: Detected 'Okay Nabu' with sliding average probability is 0.87 and max probability is 0.93
+[10:02:29.734][D][speaker_media_player:456]: State changed to ANNOUNCING
+[10:02:29.736][D][speaker_media_player.pipeline:118]: Reading FLAC file type
+[10:02:29.738][D][ring_buffer:035][ann_read]: Created ring buffer with size 1000000
+[10:02:29.822][D][speaker_media_player.pipeline:128]: Decoded audio has 1 channels, 48000 Hz sample rate, and 16 bits per sample
+[10:02:29.838][S][media_player]: '' >> PLAYING
+[10:02:29.838][S][media_player]:   Volume: 50%
+[10:02:29.839][D][resampler_speaker:119]: Starting
+[10:02:29.840][D][ring_buffer:035]: Created ring buffer with size 3200
+[10:02:29.843][D][speaker_mixer:457]: Starting
+[10:02:29.844][D][ring_buffer:035][resampler]: Created ring buffer with size 9600
+[10:02:30.017][D][voice_assistant:576]: State changed from IDLE to START_MICROPHONE
+[10:02:30.018][D][voice_assistant:583]: Desired state set to START_PIPELINE
+[10:02:30.031][D][voice_assistant:254]: Starting Microphone
+[10:02:30.031][D][ring_buffer:035]: Created ring buffer with size 16384
+[10:02:30.033][D][voice_assistant:576]: State changed from START_MICROPHONE to STARTING_MICROPHONE
+[10:02:30.050][D][voice_assistant:576]: State changed from STARTING_MICROPHONE to START_PIPELINE
+[10:02:30.070][D][voice_assistant:278]: Requesting start
+[10:02:30.071][D][voice_assistant:576]: State changed from START_PIPELINE to STARTING_PIPELINE
+[10:02:30.088][D][voice_assistant:598]: Client started, streaming microphone
+[10:02:30.090][D][voice_assistant:576]: State changed from STARTING_PIPELINE to STREAMING_MICROPHONE
+[10:02:30.090][D][voice_assistant:583]: Desired state set to STREAMING_MICROPHONE
+[10:02:30.091][D][voice_assistant:730]: Event Type: 1
+[10:02:30.092][D][voice_assistant:733]: Assist Pipeline running
+[10:02:30.093][D][voice_assistant:730]: Event Type: 3
+[10:02:30.094][D][voice_assistant:752]: STT started
+[10:02:30.094][D][led:695]: control_leds: wifi=1 api=1 improv=0 init=0 ringing=0 timers_active=0 phase=2
+[10:02:30.098][I][led:654]: led_set_effect: effect='solid' rgb(0.50, 0.00, 0.50) brightness=0.80
+[10:02:30.199][S][light]: 'Status Ring' >> ON
+[10:02:30.199][S][light]:   Brightness: 80%
+[10:02:30.199][S][light]:   Red: 100%, Green: 0%, Blue: 100%
+[10:02:30.199][S][light]:   Effect: 'None'
+[10:02:30.510][D][speaker_media_player:456]: State changed to IDLE
+[10:02:30.511][D][resampler_speaker:150]: Stopped
+[10:02:30.615][S][media_player]: '' >> IDLE
+[10:02:30.615][S][media_player]:   Volume: 50%
+[10:02:30.905][D][speaker_mixer:475]: Stopped
+[10:02:32.969][D][voice_assistant:730]: Event Type: 11
+[10:02:32.971][D][voice_assistant:933]: Starting STT by VAD
+[10:02:32.971][D][led:695]: control_leds: wifi=1 api=1 improv=0 init=0 ringing=0 timers_active=0 phase=3
+[10:02:32.972][I][led:654]: led_set_effect: effect='Pulse Medium' rgb(0.80, 0.00, 0.80) brightness=0.80
+[10:02:33.077][S][light]: 'Status Ring' >> ON
+[10:02:33.077][S][light]:   Brightness: 80%
+[10:02:33.077][S][light]:   Red: 100%, Green: 0%, Blue: 100%
+[10:02:33.077][S][light]:   Effect: 'Pulse Medium'
+[10:02:34.982][D][voice_assistant:730]: Event Type: 12
+[10:02:34.986][D][voice_assistant:937]: STT by VAD end
+[10:02:34.987][D][voice_assistant:576]: State changed from STREAMING_MICROPHONE to STOP_MICROPHONE
+[10:02:34.987][D][voice_assistant:583]: Desired state set to AWAITING_RESPONSE
+[10:02:34.990][D][led:695]: control_leds: wifi=1 api=1 improv=0 init=0 ringing=0 timers_active=0 phase=4
+[10:02:34.990][I][led:654]: led_set_effect: effect='Pulse Slow' rgb(0.60, 0.00, 0.60) brightness=0.80
+[10:02:35.020][D][voice_assistant:576]: State changed from STOP_MICROPHONE to STOPPING_MICROPHONE
+[10:02:35.021][D][voice_assistant:576]: State changed from STOPPING_MICROPHONE to AWAITING_RESPONSE
+[10:02:35.090][S][light]: 'Status Ring' >> ON
+[10:02:35.090][S][light]:   Brightness: 80%
+[10:02:35.090][S][light]:   Red: 100%, Green: 0%, Blue: 100%
+[10:02:35.090][S][light]:   Effect: 'Pulse Slow'
+[10:02:43.209][D][voice_assistant:730]: Event Type: 4
+[10:02:43.211][D][voice_assistant:769]: Speech recognised as: " Schalte Lichtküche ein."
+[10:02:43.212][D][voice_assistant:730]: Event Type: 5
+[10:02:43.212][D][voice_assistant:774]: Intent started
+[10:02:46.439][D][voice_assistant:730]: Event Type: 6
+[10:02:46.441][D][voice_assistant:730]: Event Type: 7
+[10:02:46.441][D][voice_assistant:827]: Response: "Lichtküche existiert nicht"
+[10:02:46.441][D][voice_assistant:730]: Event Type: 8
+[10:02:46.442][D][voice_assistant:849]: Response URL: "http://192.168.178.56:8123/api/tts_proxy/V6qP5x8f6DZbdvsMybsUAA.flac"
+[10:02:46.444][D][voice_assistant:576]: State changed from AWAITING_RESPONSE to STREAMING_RESPONSE
+[10:02:46.445][D][voice_assistant:583]: Desired state set to STREAMING_RESPONSE
+[10:02:46.446][D][voice_assistant:730]: Event Type: 2
+[10:02:46.447][D][voice_assistant:872]: Assist Pipeline ended
+[10:02:46.449][D][led:695]: control_leds: wifi=1 api=1 improv=0 init=0 ringing=0 timers_active=0 phase=5
+[10:02:46.451][I][led:654]: led_set_effect: effect='Wipe' rgb(0.60, 0.00, 0.60) brightness=0.80
+[10:02:46.464][D][speaker_media_player:456]: State changed to ANNOUNCING
+[10:02:46.550][S][light]: 'Status Ring' >> ON
+[10:02:46.550][S][light]:   Brightness: 80%
+[10:02:46.550][S][light]:   Red: 100%, Green: 0%, Blue: 100%
+[10:02:46.550][S][light]:   Effect: 'Wipe'
+[10:02:46.551][S][media_player]: '' >> PLAYING
+[10:02:46.551][S][media_player]:   Volume: 50%
+[10:02:47.464][D][micro_wake_word:051][mww]: Probed tensor arena size: 18256 bytes
+[10:02:49.190][D][ring_buffer:035][ann_read]: Created ring buffer with size 1000000
+[10:02:49.207][D][speaker_media_player.pipeline:118]: Reading FLAC file type
+[10:02:49.258][D][speaker_media_player.pipeline:128]: Decoded audio has 1 channels, 48000 Hz sample rate, and 16 bits per sample
+[10:02:49.261][D][resampler_speaker:119]: Starting
+[10:02:49.262][D][ring_buffer:035]: Created ring buffer with size 3200
+[10:02:49.264][D][ring_buffer:035][resampler]: Created ring buffer with size 9600
+[10:02:49.282][D][speaker_mixer:457]: Starting
+[10:02:51.682][D][speaker_media_player:456]: State changed to IDLE
+[10:02:51.683][D][voice_assistant:444]: Announcement finished playing
+[10:02:51.685][D][voice_assistant:576]: State changed from STREAMING_RESPONSE to RESPONSE_FINISHED
+[10:02:51.685][D][voice_assistant:583]: Desired state set to RESPONSE_FINISHED
+[10:02:51.688][D][resampler_speaker:150]: Stopped
+[10:02:51.703][D][voice_assistant:576]: State changed from RESPONSE_FINISHED to IDLE
+[10:02:51.705][D][voice_assistant:583]: Desired state set to IDLE
+[10:02:51.706][D][led:695]: control_leds: wifi=1 api=1 improv=0 init=0 ringing=0 timers_active=0 phase=1
+[10:02:51.708][I][led:654]: led_set_effect: effect='off' rgb(0.00, 0.00, 0.00) brightness=0.80
+[10:02:51.793][S][media_player]: '' >> IDLE
+[10:02:51.793][S][media_player]:   Volume: 50%
+[10:02:51.795][S][light]: 'Status Ring' >> OFF
+[10:02:51.878][D][speaker_mixer:475]: Stopped
+[10:03:01.095][S][text_sensor]: 'Current device time' >> '08:03'
